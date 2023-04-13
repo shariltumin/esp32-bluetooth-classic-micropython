@@ -58,8 +58,6 @@ One will serve as a slave device, while the other will serve as the master. To u
 
 We can test an SPP slave on an ESP32 board and a master from a smart phone. Boot the ESP32 and initialize it as a slave. Enable Bluetooth on the phone and try to pair it with the "SLV-1" if that is the name given to the ESP32. Start an SPP application on the smart phone and try to send and receive messages.
 
-We can also try ESP32 as a master and connect it to a JDY-31 or HC-05 device. Due to some issues in the Bluetooth stack library, we will get a lot of warning massages. We can do nothing about it, since these warnings come from a binary blob of the Bluetooth stack library there is no way to disable it. This will mass up out REPL with warnings and make it useless for interactive test.
-
 We can also try ESP32 as a master and connect it to a JDY-31 or HC-05. Due to some problems in the in the Bluetooth stack library, we will get a lot of warning messages. We cannot do anything about it. Since these warnings come from a binary blob of the Bluetooth stack library, there is no way to disable them. This will clutter our REPL with warnings and make it useless for interactive testing.
 
 The input data buffer is implemented as a ring buffer. If the data is received too fast and the buffer is full, incoming data is simply ignored. There is no provision for traffic congestion control.
