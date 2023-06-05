@@ -72,3 +72,5 @@ I provide two versions of custom MicroPython. The firmware under **prod** is for
 
 I hope some of you will find it useful. Good luck.
 
+At the monthly [Melbourne meeting](https://www.youtube.com/watch?v=nThCxRihyes), I received an honorary mention from the core MicroPython developers. Thanks!
+
